@@ -1,0 +1,82 @@
+head
+    meta(charset='utf-8')
+    meta(content='width=device-width, initial-scale=1' name='viewport')
+    title
+        | Your Shopping Cart
+        | | Squatty Potty
+    meta(property='og:site_name' content='Squatty Potty')
+    link(rel='stylesheet' type='text/css' href='/stylesheets/cart.css')
+    meta(property='og:url' content='https://www.squattypotty.com/cart')
+    meta(property='og:title' content='Your Shopping Cart')
+    meta(property='og:type' content='website')
+    meta(property='og:description' content='The #1 way to #2! Squatty Potty is the original toilet stool that helps you poop better.')
+    meta(name='twitter:site' content='@')
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:title' content='Your Shopping Cart')
+    meta(name='twitter:description' content='The #1 way to #2! Squatty Potty is the original toilet stool that helps you poop better.')
+    link(href='https://www.squattypotty.com/cart' rel='canonical')
+    script(src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js' type='text/javascript')
+    script(src='https://use.typekit.net/nyo4rog.js' type='text/javascript')
+      script(src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js' type='text/javascript')
+    link(href='//cdn.shopify.com/s/files/1/0260/7366/1474/t/157/assets/favicon.png?v=16937167795890377294' rel='shortcut icon' type='image/x-icon')
+    link(rel='shortcut icon' type='image/png' href='//cdn.shopify.com/shopifycloud/shopify/assets/no-image-50-3d8cc48bd078edcd544c8d60f929ed2d8800a3fc52e0f602e84b1767e392bfcd_32x32.gif')
+    link(href='//cdn.shopify.com/s/files/1/0260/7366/1474/t/157/assets/webclip.png?v=765006783523968835' rel='apple-touch-icon')
+    link(rel='apple-touch-icon' type='image/png' href='//cdn.shopify.com/shopifycloud/shopify/assets/no-image-50-3d8cc48bd078edcd544c8d60f929ed2d8800a3fc52e0f602e84b1767e392bfcd_32x32.gif')
+    style.
+        /* Lock Scroll */
+        html.no-scroll {overflow: hidden;}
+
+div.hero-section.cart
+    div.hero-background-wrap
+        div.p100-wrap._80pad.center.top
+            div.hero-content-wrap.center
+                h1.hero-small-heading Your Cart
+                p.hero-small-subheading 60-day money back guarantee
+
+div.cart-page-wrap
+    div.cart---copy-this.w-form
+        form(data-name='Email Form' method='post' novalidate='novalidate' action='/cart')
+            .cart-table
+                .table-header.w-hidden-tiny
+                    .table-header-data-2.product
+                        p.table-header-label-2 Item
+                    .table-header-data-2
+                        p.table-header-label-2 Price
+                    .table-header-data-2
+                        p.table-header-label-2 Quantity
+                    .table-header-data-2
+                        p.table-header-label-2 Total
+                .collection-list-wrapper-cart.w-dyn-list
+                    .collection-list-cart.w-dyn-items
+                        .w-dyn-item
+                            .cart-row---copy-this
+                                .table-row-data.product
+                                    a.w-inline-block(href='/products/pootanicals-toilet-spray?variant=32197154799650')
+                                        img.cart-image(src='//cdn.shopify.com/s/files/1/0260/7366/1474/products/LavenderFront.png?v=1599645850' alt='')
+                                    .product-info-wrapper-2
+                                        a.product-title(href='/products/pootanicals-toilet-spray') Pootanicals Pre-Potty Spray
+                                        p.variant-title
+                                        p.variant-title Lavender Vanilla / 4 oz
+                                .table-row-data.price(data-label='Price:')
+                                    p.cart-price $9.99
+                                    p.cart-original-price
+                                .table-row-data.quantity(data-label='Quantity:')
+                                    button.minus(onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+                                        i.fa.fa-minus
+                                    input.cart-quantity-field.w-input(type='number' maxlength='256' name='updates[]' placeholder='Example Text' id='updates_32197154799650:0386543ed4aaa5d4442655f7f78d62b5' min='0' value='2')
+                                    button.plus(onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+                                        i.fa.fa-plus
+                                .table-row-data.total(data-label='Total:')
+                                    p.cart-total-price $19.98
+                                    a.remove-item.w-inline-block(href='/cart/change?line=1&quantity=0' udy-el='remove-item')
+                                        img.image-29(src='//cdn.shopify.com/s/files/1/0260/7366/1474/t/157/assets/close-icon.svg?v=780424841351993548' alt='')
+            .cart-details
+                .cart-details-line
+                    p.total-label Total:
+                    p.total-price $19.98
+                .cart-details-line
+                    p.discounts-label Discounts:
+                    p.discount-price $0.00
+            .cart-actions
+                a.update.w-button(type='submit' value='Update', href="/details" data-wait='Please wait...' name='update') Update
+                a.checkout.w-button(type='submit' value='Checkout', href="/billing" data-wait='Please wait...' name='checkout' data-omnisend-checked='true') Checkout

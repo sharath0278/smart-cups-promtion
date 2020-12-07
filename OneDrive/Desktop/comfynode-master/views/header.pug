@@ -1,0 +1,22 @@
+div
+    nav.navbar.navbar-expand-lg.navbar-light
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+        a.navbar-brand(href='#')
+            img.img-fluid.wd-50.ml-1(src='/images/logo.png' alt='')
+        a.navbar-brand.cart(href='#')
+            img.img-fluid.wd-50.ml-1(src='/images/shopping-bag.png' alt='')
+        #navbarNavDropdown.collapse.navbar-collapse
+            ul.navbar-nav
+                li.nav-item.nav-links
+                    a.nav-link.nav-links(href='/' aria-haspopup='true' aria-expanded='false')
+                        | Home
+                li.nav-item.nav-links
+                    a.nav-link.nav-links(href='/details' aria-haspopup='true' aria-expanded='false')
+                        | Store
+                li.nav-item.nav-links
+                    a.nav-link.nav-links(href='#' aria-haspopup='true' aria-expanded='false')
+                        | Contact
+                li.nav-item.d-flex
+                    a.nav-link.share-a-friend(href='#' aria-haspopup='true' aria-expanded='false')
+                        | Share a friend
